@@ -1,0 +1,85 @@
+.card + .card{
+    margin-top: 0.75rem;
+}
+.card{
+    background-color: var(--gray-500);
+    color: var(--gray-100);
+    width: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding-top: 1rem;
+    
+    border-radius: 8px;
+}
+.cardCompleted{
+    border: 1px solid var(--gray-500);
+    min-height: 4.5rem;
+}
+
+.cardNotCompleted{
+    border: 1px solid var(--gray-400);
+    min-height: 4.5rem;
+}
+.card .checkComplete {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 0.75rem;
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+.checkNotCompleted {
+    border: 2px solid var(--blue);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.checkCompleted{
+    border: 0px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--purple-dark);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+.descriptionCompleted{
+    flex: 1;
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.descriptionNotCompleted{
+    flex: 1;
+}
+
+.buttonDelete {
+    width: 24px;
+    height: 24px;
+    
+    margin-right: 1rem;
+    margin-left: 0.75rem;
+    background: transparent;
+    color: var(--gray-300);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    line-height: 0;
+}
+
+.buttonDelete:hover {
+    color: var(--red-500);
+}
+
